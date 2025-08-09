@@ -1,0 +1,92 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What's Your Vibe?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /* Black to yellow contrast blend background */
+      background: linear-gradient(120deg, #181818 0%, #FFD600 63%, #FFF6A0 92%);
+      color: #fff;
+      font-family: 'Cinzel', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .question {
+      font-size: 4em;
+      margin-bottom: 10px;
+      text-shadow: 3px 3px #ff0000;
+      max-width: 90%;
+    }
+    .subtext {
+      font-size: 1.2em;
+      margin-bottom: 50px;
+      color: #aaa;
+    }
+    .vibe-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 800px;
+    }
+    .vibe-box {
+      background-color: #111;
+      border: 2px solid #444;
+      padding: 20px 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 180px;
+      text-transform: uppercase;
+      box-shadow: 0 0 10px #ff0000;
+    }
+    .vibe-box:hover {
+      background-color: #222;
+      border-color: #ff0000;
+      transform: scale(1.05);
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    @media (max-width: 600px) {
+      .vibe-container {
+        gap: 12px;
+      }
+      .vibe-box {
+        padding: 14px 8px;
+        font-size: 1.08em;
+        width: 95vw;
+        min-width: 0;
+      }
+      .question {
+        font-size: 2.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="question">So... What's Your Vibe?</div>
+  <div class="subtext">(Because clearly, your mood deserves a cinematic tribute)</div>
+
+  <div class="vibe-container">
+    <a href="file:///C:/Users/Vasud/OneDrive/CineMeme/Cinememe/happy2.html"><div class="vibe-box">Happy 🎉</div></a>
+    <a href="file:///C:/Users/Vasud/OneDrive/CineMeme/Cinememe/dramatic1.html"><div class="vibe-box">Dramatic 🎭</div></a>
+    <a href="file:///C:/Users/Vasud/OneDrive/CineMeme/Cinememe/sad.html"><div class="vibe-box">Sad 😢</div></a>
+    <a href="file:///C:/Users/Vasud/OneDrive/CineMeme/Cinememe/mass.html"><div class="vibe-box">Mass 💥</div></a>
+    <a href="file:///C:/Users/Vasud/OneDrive/CineMeme/Cinememe/absolute%20cinema.html"><div class="vibe-box">Absolute Cinema 🍿</div></a>
+  </div>
+</body>
+</html>

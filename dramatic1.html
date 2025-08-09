@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dramatic Shots</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 900px;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff3300;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px #ff3300, 0 0 20px #ff3300, 0 0 30px #ff3300;
+    }
+
+    .shot-box {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 20px;
+    }
+
+    .shot-box h2 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-style: italic;
+      margin: 10px 0;
+      color: #ccc;
+    }
+
+    .thumbnail {
+      width: 100%;
+      max-width: 500px;
+      cursor: pointer;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .thumbnail:hover {
+      transform: scale(1.05);
+    }
+
+    .caption {
+      margin-top: 10px;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    /* Explore More button styling */
+    .explore-btn {
+      display: inline-block;
+      background: #FFD600;
+      padding: 8px 24px;
+      border-radius: 7px;
+      margin: 14px 0 0 0;
+      font-weight: 600;
+      transition: box-shadow 0.21s, transform 0.2s;
+      box-shadow: 0 2px 16px #ffd60066;
+      text-align: center;
+    }
+    .explore-btn a {
+      color: #181818 !important;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-family: inherit;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      display: block;
+    }
+    .explore-btn:hover, .explore-btn:focus {
+      box-shadow: 0 4px 40px #ffd600a8, 0 0px 14px #fffbe199 inset;
+      transform: scale(1.05);
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    .popup img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      font-size: 40px;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>DRAMATIC  🎭</h1>
+
+    <div class="shot-box">
+      <h2>CLOSE-UP</h2>
+      <p class="description">The stare before the storm. Or the confession.</p>
+      <img src="C:\Users\Vasud\OneDrive\CineMeme\New folder\IMAGES\WhatsApp Image 2025-08-09 at 00.06.06_8179b616.jpg" alt="Close-Up" class="thumbnail" onclick="openPopup(this)">
+      <div style="text-align: right;">
+        <span class="explore-btn">
+          <a href="https://youtu.be/VfaZXlJso-s?si=WvdNcqtyGEj9IFSA" target="_blank">Explore More</a>
+        </span>
+      </div>
+      <p class="caption">"Because drama lives in the eyes and dies in the silence."</p>
+    </div>
+
+    <div class="shot-box">
+      <h2>LOW ANGLE</h2>
+      <p class="description">Makes the character look powerful. Or terrifying.</p>
+      <img src="C:\Users\Vasud\OneDrive\CineMeme\New folder\IMAGES\WhatsApp Image 2025-08-09 at 00.09.21_6789b23e.jpg" alt="Low Angle" class="thumbnail" onclick="openPopup(this)">
+      <div style="text-align: right;">
+        <span class="explore-btn">
+          <a href="https://youtu.be/KusFGvIHDag?si=oRnOZasHSZaWK5LF" target="_blank">Explore More</a>
+        </span>
+      </div>
+      <p class="caption">"Because villains deserve flattering angles too."</p>
+    </div>
+
+    <div class="shot-box">
+      <h2>WIDE SHOT</h2>
+      <p class="description">Establishes mood. Isolation. Grandeur. Doom.</p>
+      <img src="C:\Users\Vasud\OneDrive\CineMeme\New folder\IMAGES\WhatsApp Image 2025-08-08 at 20.29.41_19869fdf.jpg" alt="Wide Shot" class="thumbnail" onclick="openPopup(this)">
+      <div style="text-align: right;">
+        <span class="explore-btn">
+          <a href="https://youtu.be/VwbSxxm6skM?si=TXAFTq0gZHFLUfcr" target="_blank">Explore More</a>
+        </span>
+      </div>
+      <p class="caption">"Because drama needs room to breathe. And echo."</p>
+    </div>
+  </div>
+
+  <script>
+    function openPopup(img) {
+      document.getElementById("popup-img").src = img.src;
+      document.getElementById("popup").style.display = "block";
+    }
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</body>
+</html>

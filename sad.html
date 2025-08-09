@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sad Shots</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /* Background is now pure black */
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      text-align: center;
+      max-width: 900px;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #00aaff;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff;
+    }
+    .shot-box {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 20px;
+    }
+    .shot-box h2 {
+      color: #ff6666;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-style: italic;
+      margin: 10px 0;
+      color: #ccc;
+    }
+    .thumbnail {
+      width: 100%;
+      max-width: 500px;
+      cursor: pointer;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .thumbnail:hover {
+      transform: scale(1.05);
+    }
+    .caption {
+      margin-top: 10px;
+      color: #aaa;
+      font-style: italic;
+    }
+    /* Explore button styles */
+    .explore-btn {
+      display: inline-block;
+      background: #FFD600;
+      padding: 8px 24px;
+      border-radius: 7px;
+      margin: 14px 0 0 0;
+      font-weight: 600;
+      transition: box-shadow 0.21s, transform 0.2s;
+      box-shadow: 0 2px 16px #ffd60066;
+    }
+    .explore-btn a {
+      color: #181818 !important;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-family: inherit;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      display: block;
+    }
+    .explore-btn:hover, .explore-btn:focus {
+      box-shadow: 0 4px 40px #ffd600a8, 0 0px 14px #fffbe199 inset;
+      transform: scale(1.05);
+    }
+    /* Popup styles unchanged */
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      text-align: center;
+      padding-top: 60px;
+    }
+    .popup img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      font-size: 40px;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MELANCHOLIC😢</h1>
+
+    <div class="shot-box">
+      <h2>EXTREME CLOSE-UP</h2>
+      <p class="description">Every tear, every twitch. Sadness in 4K.Zooms in absurdly close—just eyes, lips, or a single tear for max drama.  
+</p>
+      <img src="C:\Users\Vasud\OneDrive\CineMeme\New folder\IMAGES\WhatsApp Image 2025-08-08 at 19.16.11_a7bbee77.jpg" alt="Extreme Close-Up" class="thumbnail" onclick="openPopup(this)">
+      <div style="text-align: right;">
+        <span class="explore-btn">
+          <a href="https://youtube.com/shorts/h8NstyJWyB0?si=0N44D4TtcLSctlvK" target="_blank">Explore More</a>
+        </span>
+      </div>
+      <p class="caption">"Zoom in until you feel the heartbreak pixel by pixel."</p>
+    </div>
+
+    <div class="shot-box">
+      <h2>OVER-THE SHOULDER</h2>
+      <p class="description">Watching someone walk away. Slowly. Dramatically.Frames the scene from behind a character’s shoulder, like we’re spying politely.</p>
+      <img src="C:\Users\Vasud\OneDrive\CineMeme\New folder\IMAGES\WhatsApp Image 2025-08-08 at 23.53.38_24c64f80.jpg" alt="Over-the-Shoulder" class="thumbnail" onclick="openPopup(this)">
+      <div style="text-align: right;">
+        <span class="explore-btn">
+          <a href="https://youtu.be/T4hfGzDtzXk?si=gIo-hTF4RzveJEuB" target="_blank">Explore More</a>
+        </span>
+      </div>
+      <p class="caption">"Because closure looks better from behind."</p>
+    </div>
+
+    <div class="shot-box">
+      <h2>DRONE SHOT</h2>
+      <p class="description">Tiny figure. Vast emptiness. Sadness with altitudeA majestic aerial view that screams “cinematic budget unlocked.</p>
+      <img src="C:\Users\Vasud\OneDrive\CineMeme\New folder\IMAGES\WhatsApp Image 2025-08-08 at 19.16.11_7a360642.jpg" alt="Drone Shot" class="thumbnail" onclick="openPopup(this)">
+      <div style="text-align: right;">
+        <span class="explore-btn">
+          <a href="https://youtube.com/shorts/DzL8hLv-k8Y?si=NkKAq5FgY1yeVPfI" target="_blank">Explore More</a>
+        </span>
+      </div>
+      <p class="caption">"Nothing says isolation like being swallowed by scenery."</p>
+    </div>
+
+    <div class="shot-box">
+      <h2>RACK FOCUS</h2>
+      <p class="description">Shift from hope to despair. Literally.Shifts focus mid-shot to guide your eyeballs from one subject to another—subtle flex.</p>
+      <img src="C:\Users\Vasud\OneDrive\CineMeme\New folder\IMAGES\WhatsApp Image 2025-08-08 at 19.16.08_3720252d.jpg" alt="Rack Focus" class="thumbnail" onclick="openPopup(this)">
+      <div style="text-align: right;">
+        <span class="explore-btn">
+          <a href="https://youtube.com/shorts/jVebGBoSR38?si=dAnbIjxmt14MkURS" target="_blank">Explore More</a>
+        </span>
+      </div>
+      <p class="caption">"Because blurry emotions deserve sharp transitions."</p>
+    </div>
+
+    <div class="shot-box">
+      <h2>LOW ANGLE</h2>
+      <p class="description">Sadness with power. Or just dramatic lighting. Shoots upward to make the subject look powerful, heroic, or just intimidating</p>
+      <img src="C:\Users\Vasud\OneDrive\CineMeme\New folder\IMAGES\WhatsApp Image 2025-08-08 at 19.16.10_7511c32d.jpg" alt="Low Angle" class="thumbnail" onclick="openPopup(this)">
+      <div style="text-align: right;">
+        <span class="explore-btn">
+          <a href="https://youtu.be/KusFGvIHDag?si=oRnOZasHSZaWK5LF" target="_blank">Explore More</a>
+        </span>
+      </div>
+      <p class="caption">"Cry like a misunderstood villain."</p>
+    </div>
+
+    <div class="shot-box">
+      <h2>HIGH ANGLE</h2>
+      <p class="description">Looking down on the subject. Literally and emotionally.Shoots downward to make the subject look small, weak, or suspiciously sketchy.</p>
+      <img src="C:\Users\Vasud\OneDrive\CineMeme\New folder\IMAGES\WhatsApp Image 2025-08-08 at 19.16.10_b404b86a.jpg" alt="High Angle" class="thumbnail" onclick="openPopup(this)">
+      <div style="text-align: right;">
+        <span class="explore-btn">
+          <a href="https://youtube.com/shorts/iI_Xwa8_SoQ?si=pI3daZBkegvQ28Ns" target="_blank">Explore More</a>
+        </span>
+      </div>
+      <p class="caption">"Sadness from above. Like the universe judging you."</p>
+    </div>
+
+    <div class="shot-box">
+      <h2>INSERT SHOT</h2>
+      <p class="description">Focus on the object that broke you. Symbolism, baby.A close-up of an object—phone screen, letter, knife—because details matter</p>
+      <img src="C:\Users\Vasud\OneDrive\CineMeme\New folder\IMAGES\WhatsApp Image 2025-08-08 at 19.16.08_cbea21ab.jpg" alt="Insert Shot" class="thumbnail" onclick="openPopup(this)">
+      <div style="text-align: right;">
+        <span class="explore-btn">
+          <a href="https://youtu.be/DHC4cSX4FDQ?si=xGiT8dZ5lHWHCOTC" target="_blank">Explore More</a>
+        </span>
+      </div>
+      <p class="caption">"Because that crumpled letter deserves its own close-up."</p>
+    </div>
+
+    <div class="shot-box">
+      <h2>MEDIUM SHOT</h2>
+      <p class="description">Balanced view of body language and emotional damage. Frames the subject from the waist up, perfect for dialogue or casual drama.</p>
+      <img src="C:\Users\Vasud\OneDrive\CineMeme\New folder\IMAGES\WhatsApp Image 2025-08-08 at 19.16.12_eec75241.jpg" alt="Medium Shot" class="thumbnail" onclick="openPopup(this)">
+      <div style="text-align: right;">
+        <span class="explore-btn">
+          <a href="https://youtube.com/shorts/tDpURHjr-Fo?si=tqwDmoKxX0BuoTGp" target="_blank">Explore More</a>
+        </span>
+      </div>
+      <p class="caption">"Enough space to cry without zooming in on the snot."</p>
+    </div>
+  </div>
+  <script>
+    function openPopup(img) {
+      // Popup logic placeholder (you may implement image popups if needed)
+    }
+    function closePopup() {
+      // Popup logic placeholder
+    }
+  </script>
+</body>
+</html>

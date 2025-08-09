@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CINIEMEME: Shot Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --text-light: #f5f5f5;
+      --accent-gold: gold;
+      --accent-hover: #ffcc00;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background:
+        /* Optimized black-yellow blend with strong gold accent */
+        linear-gradient(120deg, #181818 0%, #232004 38%, #FFD600 63%, #FFF6A0 92%);
+      color: var(--text-light);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+      box-shadow: inset 0 0 180px 40px #000a;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Lighting effect overlay */
+    .lighting-effect {
+      position: fixed;
+      top: -22%;
+      left: -22%;
+      width: 160vw;
+      height: 180vh;
+      pointer-events: none;
+      z-index: 1;
+      background: radial-gradient(ellipse 70% 32% at 68% 41%, rgba(255,221,49,0.20) 0%, transparent 100%);
+      opacity: 0.85;
+      mix-blend-mode: screen;
+      animation: shine 4.5s ease-in-out infinite alternate;
+    }
+    @keyframes shine {
+      from { opacity: 0.85; }
+      to   { opacity: 1; }
+    }
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 700;
+      letter-spacing: 2px;
+      background: linear-gradient(to right, gold, #ffcc00 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+      margin-bottom: 24px;
+      z-index: 2;
+      position: relative;
+    }
+    .desc {
+      font-size: 1.15em;
+      color: #eee;
+      max-width: 600px;
+      margin-bottom: 38px;
+      z-index: 2;
+      position: relative;
+    }
+    button.cta-button {
+      padding: 14px 28px;
+      background: var(--accent-gold);
+      color: #222;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 10px var(--accent-gold);
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+      z-index: 2;
+      position: relative;
+    }
+    button.cta-button:hover {
+      background: var(--accent-hover);
+      transform: scale(1.05);
+    }
+    footer {
+      position: absolute;
+      bottom: 18px;
+      font-size: 0.97em;
+      color: #333;
+      z-index: 2;
+      background: rgba(255,255,255,0.18);
+      padding: 6px 16px;
+      border-radius: 7px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: fixed;
+    }
+  </style>
+</head>
+<body>
+  <div class="lighting-effect"></div>
+  <h1>CINIEMEME</h1>
+  <div class="desc">
+    A meme-powered cinematic shot planner for creators who love vibes, visuals, and Kerala flavor.
+  </div>
+  <button class="cta-button" onclick="navigateToPlanner()">Launch Planner</button>
+  <footer>
+    Made in Kerala with memes, coconut oil, and HTML.<br />
+    © 2025 CINEMEME. All rights reserved.
+  </footer>
+  <script>
+    function navigateToPlanner() {
+      window.location.href = "file:///C:/Users/Vasud/OneDrive/CineMeme/Cinememe/vibe.html";
+    }
+  </script>
+</body>
+</html>
